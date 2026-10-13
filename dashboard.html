@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#202122">
+    <title>Kigali Uplink | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="dashboard" class="analytics-page">
+    <main class="analytics-frame">
+        <div class="analytics-app">
+            <aside class="icon-rail" aria-label="Quick navigation">
+                <a class="rail-brand" href="index.html" aria-label="Kigali Uplink home">
+                    <span class="uplink-mark">K</span>
+                </a>
+                <a href="index.html" class="rail-link is-current" aria-label="Dashboard">▦</a>
+                <a href="#earnings" class="rail-link" aria-label="Statistics">▥</a>
+                <a href="#countries" class="rail-link" aria-label="Customers">♧</a>
+                <a href="#messages" class="rail-link" aria-label="Messages">▤</a>
+                <a href="#payment" class="rail-link" aria-label="Payment">▱</a>
+                <a href="weather.html" class="rail-link" aria-label="Weather">☼</a>
+                <a href="wallet.html" class="rail-link" aria-label="Wallet">▣</a>
+                <a href="admin.html" class="rail-link" aria-label="Admin">⚙</a>
+                <button class="rail-link rail-settings" id="rail-settings-button" type="button" aria-label="Settings">⚙</button>
+            </aside>
+
+            <aside class="analytics-sidebar">
+                <a class="analytics-brand" href="index.html">
+                    <span class="uplink-mark">K</span>
+                    <span><strong>KIGALI</strong><small>UPLINK CONSOLE</small></span>
+                </a>
+
+                <nav class="analytics-nav" aria-label="Main navigation">
+                    <a class="analytics-nav-link is-current" href="index.html"><span>▦</span>Dashboard</a>
+                    <a class="analytics-nav-link" href="#earnings"><span>▥</span>Statistics</a>
+                    <a class="analytics-nav-link" href="#countries"><span>♧</span>Customers</a>
+                    <a class="analytics-nav-link" href="#messages"><span>▤</span>Messages</a>
+                    <a class="analytics-nav-link" href="#payment"><span>▱</span>Payment</a>
+                    <a class="analytics-nav-link" href="weather.html"><span>☼</span>Weather</a>
+                    <a class="analytics-nav-link" href="wallet.html"><span>▣</span>Wallet</a>
+                    <a class="analytics-nav-link" href="admin.html"><span>⚙</span>Admin</a>
+                    <button class="analytics-nav-link" type="button" id="settings-button"><span>⚙</span>Settings</button>
+                </nav>
+
+                <div class="sidebar-account">
+                    <span class="account-avatar">K</span>
+                    <span><strong id="sidebar-user-name">Kigali User</strong><small>City administrator</small></span>
+                </div>
+            </aside>
+
+            <section class="analytics-main" id="overview">
+                <header class="analytics-topbar">
+                    <label class="dashboard-search">
+                        <span aria-hidden="true">⌕</span>
+                        <input id="dashboard-search" type="search" placeholder="Search customers..." aria-label="Search customers">
+                        <kbd>Ctrl K</kbd>
+                    </label>
+                    <div class="topbar-actions">
+                        <button class="icon-button notification-button" type="button" aria-label="Notifications">
+                            ♧<span class="notification-dot"></span>
+                        </button>
+                        <div class="user-menu">
+                            <span class="account-avatar">K</span>
+                            <span id="topbar-user-name">Kigali User</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="dashboard-intro">
+                    <div>
+                        <p class="dashboard-kicker">KIGALI UPLINK · CITY OVERVIEW</p>
+                        <h1 id="welcome-heading">Dashboard</h1>
+                    </div>
+                    <span class="live-indicator"><i></i> Systems online</span>
+                </div>
+
+                <div class="analytics-grid">
+                    <section class="analytics-panel earnings-panel" id="earnings">
+                        <div class="panel-heading">
+                            <div><h2>Earnings</h2><p class="panel-caption">Monthly city service revenue</p></div>
+                            <label class="year-select">Year
+                                <select aria-label="Earnings year">
+                                    <option>2026</option>
+                                    <option>2025</option>
+                                    <option>2024</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="chart-legend"><span><i></i>Revenue (RWF)</span><strong>+12.8% <small>this year</small></strong></div>
+                        <div class="bar-chart" role="img" aria-label="Illustrative monthly earnings chart, January to December">
+                            <div class="chart-y-axis"><span>2000</span><span>1500</span><span>1000</span><span>500</span><span>0</span></div>
+                            <div class="chart-plot">
+                                <div class="chart-gridlines"><i></i><i></i><i></i><i></i></div>
+                                <div class="chart-bars">
+                                    <span style="--bar-height: 34%"><i></i><small>Jan</small></span>
+                                    <span style="--bar-height: 48%"><i></i><small>Feb</small></span>
+                                    <span style="--bar-height: 20%"><i></i><small>Mar</small></span>
+                                    <span style="--bar-height: 64%"><i></i><small>Apr</small></span>
+                                    <span style="--bar-height: 31%"><i></i><small>May</small></span>
+                                    <span style="--bar-height: 43%"><i></i><small>Jun</small></span>
+                                    <span style="--bar-height: 82%"><i></i><small>Jul</small></span>
+                                    <span style="--bar-height: 49%"><i></i><small>Aug</small></span>
+                                    <span style="--bar-height: 33%"><i></i><small>Sep</small></span>
+                                    <span style="--bar-height: 91%"><i></i><small>Oct</small></span>
+                                    <span style="--bar-height: 79%"><i></i><small>Nov</small></span>
+                                    <span style="--bar-height: 92%"><i></i><small>Dec</small></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="demo-disclaimer">Sample dashboard data for demonstration</p>
+                    </section>
+
+                    <section class="analytics-panel calendar-panel">
+                        <div class="panel-heading"><div><h2>Calendar</h2><p class="panel-caption">Plan your month</p></div></div>
+                        <div class="calendar-controls">
+                            <button type="button" id="calendar-previous" aria-label="Previous month">‹</button>
+                            <strong id="calendar-month">Loading...</strong>
+                            <button type="button" id="calendar-next" aria-label="Next month">›</button>
+                        </div>
+                        <div class="calendar-grid calendar-weekdays" aria-hidden="true">
+                            <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+                        </div>
+                        <div class="calendar-grid" id="calendar-days" aria-label="Calendar dates"></div>
+                    </section>
+
+                    <section class="analytics-panel countries-panel" id="countries">
+                        <div class="panel-heading"><div><h2>Customers</h2><p class="panel-caption">By district</p></div><button class="subtle-icon" type="button" aria-label="More customer options">···</button></div>
+                        <div class="customer-chart-wrap">
+                            <div class="customer-donut" role="img" aria-label="Customer distribution: Gasabo 48 percent, Kicukiro 32 percent, Nyarugenge 20 percent"><div><strong>3</strong><small>Districts</small></div></div>
+                            <ul class="district-legend">
+                                <li><i class="legend-pink"></i>Gasabo <b>48%</b></li>
+                                <li><i class="legend-blue"></i>Kicukiro <b>32%</b></li>
+                                <li><i class="legend-green"></i>Nyarugenge <b>20%</b></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="analytics-panel messages-panel" id="messages">
+                        <div class="panel-heading"><div><h2>Latest messages</h2><p class="panel-caption">Recent customer activity</p></div><a class="view-all-link" href="weather.html">View weather →</a></div>
+                        <div class="messages-table-wrap">
+                            <table class="messages-table">
+                                <thead><tr><th>Customer</th><th>Status</th><th>Date</th></tr></thead>
+                                <tbody id="customer-rows">
+                                    <tr><td><span class="table-avatar">JM</span>Jean M.</td><td><span class="status-pill status-new">New</span></td><td>Oct 10 · 10:13</td></tr>
+                                    <tr><td><span class="table-avatar">AK</span>Aline K.</td><td><span class="status-pill status-replied">Replied</span></td><td>Oct 09 · 14:59</td></tr>
+                                    <tr><td><span class="table-avatar">PN</span>Patrick N.</td><td><span class="status-pill status-unread">Unread</span></td><td>Oct 09 · 12:16</td></tr>
+                                    <tr><td><span class="table-avatar">UC</span>Uwase C.</td><td><span class="status-pill status-new">New</span></td><td>Oct 08 · 15:10</td></tr>
+                                </tbody>
+                            </table>
+                            <p id="search-empty" class="search-empty" hidden>No customers match your search.</p>
+                        </div>
+                    </section>
+
+                    <section class="analytics-panel payment-panel" id="payment">
+                        <div class="panel-heading"><div><h2>Money available</h2><p class="panel-caption">City service balance</p></div></div>
+                        <div class="balance-card">
+                            <span>Available balance</span>
+                            <strong>3,200 <small>RWF</small></strong>
+                            <span class="balance-change">↑ 8.2% this month</span>
+                        </div>
+                        <button type="button" class="transfer-button" id="transfer-button">Transfer to bank account <span>→</span></button>
+                        <p class="balance-note" id="balance-note">Demo balance · No real funds</p>
+                    </section>
+                </div>
+
+                <footer class="analytics-footer">Kigali Uplink <span>·</span> Dashboard data is illustrative</footer>
+            </section>
+        </div>
+    </main>
+
+    <dialog class="settings-dialog" id="settings-dialog">
+        <form method="dialog">
+            <button class="dialog-close" aria-label="Close settings">×</button>
+            <p class="dashboard-kicker">PREFERENCES</p>
+            <h2>Dashboard settings</h2>
+            <p>Account and dashboard controls are available here.</p>
+            <a href="weather.html">Open live weather →</a>
+            <button class="dialog-done">Done</button>
+        </form>
+    </dialog>
+</body>
+</html>

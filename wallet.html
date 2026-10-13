@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Kigali | Wallet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="wallet">
+
+    <div class="app">
+        <aside class="sidebar">
+            <h2 class="logo">Smart Kigali</h2>
+
+            <nav>
+                <a href="index.html">▦ Dashboard</a>
+                <a href="weather.html">☀ Weather</a>
+                <a href="wallet.html" class="active">▣ Wallet</a>
+                <a href="admin.html">⚙ Admin</a>
+            </nav>
+
+            <p class="online">● City systems online</p>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">KIGALI SMART CITY PORTAL</p>
+                    <h1>Digital Wallet</h1>
+                </div>
+                <div class="profile">👤 Citizen</div>
+            </header>
+
+            <section class="welcome">
+                <p class="eyebrow">YOUR PERSONAL SPACE</p>
+                <h2>Your Tickets, In One Place</h2>
+                <p>Create a demo event ticket and save it in your browser.</p>
+
+                <button id="add-ticket">+ Create Demo Ticket</button>
+            </section>
+
+            <section>
+                <h2 class="section-title">Saved Tickets</h2>
+
+                <p id="wallet-status" class="notice">
+                    Tickets are saved in this browser.
+                </p>
+
+                <div id="ticket-list"></div>
+
+                <button id="clear-tickets" class="secondary-button">
+                    Clear All Tickets
+                </button>
+            </section>
+
+            <footer>© 2026 Smart Kigali Portal</footer>
+        </main>
+    </div>
+
+</body>
+</html>

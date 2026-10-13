@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigali Uplink | Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="weather">
+
+    <header class="site-header weather-header">
+        <a class="site-logo" href="index.html">
+            <span class="mini-sun">☀</span> Kigali Uplink
+        </a>
+
+        <nav class="site-nav">
+            <a href="index.html">Dashboard</a>
+            <a class="nav-active" href="weather.html">Weather</a>
+            <a href="wallet.html">Wallet</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main class="weather-page">
+        <section class="weather-title">
+            <h1>Kigali Uplink</h1>
+            <p>Live weather from the Land of a Thousand Hills</p>
+            <p id="weather-greeting" class="weather-greeting"></p>
+        </section>
+
+        <section
+            class="weather-scene"
+            id="weather-scene"
+            data-condition="partly-cloudy"
+            aria-label="Illustration of the current weather"
+        >
+            <div class="sun" id="sun-illustration"></div>
+
+            <div class="cloud cloud-one" id="cloud-one"></div>
+            <div class="cloud cloud-two" id="cloud-two"></div>
+
+            <div class="rain-drops" id="rain-drops" aria-hidden="true">
+                💧 💧 💧 💧 💧 💧 💧
+            </div>
+
+            <div class="snowflakes" id="snowflakes" aria-hidden="true">
+                ❄️ ❄️ ❄️ ❄️ ❄️
+            </div>
+
+            <div class="scene-condition" id="weather-condition">
+                Partly cloudy
+            </div>
+        </section>
+
+        <section class="weather-stats">
+            <article class="weather-stat temperature-card">
+                <p>TEMPERATURE</p>
+                <h2 id="temperature-value">-- °C</h2>
+            </article>
+
+            <article class="weather-stat wind-card">
+                <p>WIND</p>
+                <h2 id="wind-value">-- km/h</h2>
+            </article>
+
+            <article class="weather-stat status-card">
+                <p>STATUS</p>
+                <h2 id="condition-status">Waiting...</h2>
+            </article>
+        </section>
+
+        <div class="weather-actions">
+            <button id="fetch-weather" class="fetch-button" type="button">
+                Fetch Live Data
+            </button>
+
+            <p id="updated-time" aria-live="polite">
+                Press the button to fetch weather.
+            </p>
+
+            <p id="weather-error" class="form-message" aria-live="polite"></p>
+        </div>
+
+        <footer class="page-footer weather-footer">
+            Kigali Uplink · Made for Kigali 🇷🇼
+        </footer>
+    </main>
+
+</body>
+</html>

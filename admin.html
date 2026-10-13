@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Kigali | Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="admin">
+
+    <div class="app">
+        <aside class="sidebar">
+            <h2 class="logo">Smart Kigali</h2>
+
+            <nav>
+                <a href="index.html">▦ Dashboard</a>
+                <a href="weather.html">☀ Weather</a>
+                <a href="wallet.html">▣ Wallet</a>
+                <a href="admin.html" class="active">⚙ Admin</a>
+            </nav>
+
+            <p class="online">● City systems online</p>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">KIGALI SMART CITY PORTAL</p>
+                    <h1>Admin Override</h1>
+                </div>
+                <div class="profile">⚙ Administrator</div>
+            </header>
+
+            <section class="welcome">
+                <p class="eyebrow">CITY COMMUNICATIONS</p>
+                <h2>Send a City Alert</h2>
+                <p>Write a message to display on the main dashboard.</p>
+            </section>
+
+            <section class="panel">
+                <h2>Create an Alert</h2>
+
+                <form id="alert-form">
+                    <label for="alert-message">Alert Message</label>
+
+                    <textarea
+                        id="alert-message"
+                        name="alert-message"
+                        rows="5"
+                        maxlength="180"
+                        placeholder="Example: Heavy rain expected in Kigali today."
+                        autocomplete="off"
+                        required
+                    ></textarea>
+
+                    <p id="character-count" class="muted">0 / 180</p>
+
+                    <button type="submit">Send to Dashboard →</button>
+                </form>
+
+                <p class="muted">
+                    This is a classroom demonstration. It does not
+                    send real public notifications.
+                </p>
+            </section>
+
+            <footer>© 2026 Smart Kigali Portal</footer>
+        </main>
+    </div>
+
+</body>
+</html>
